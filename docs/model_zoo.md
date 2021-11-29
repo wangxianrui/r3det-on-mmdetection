@@ -310,8 +310,6 @@ For fair comparison, we install and run both frameworks on the same machine.
 
 ### Training Speed
 
-The training speed is measure with s/iter. The lower, the better.
-
 | Type         | Detectron2 | mmdetection |
 | ------------ | ---------- | ----------- |
 | Faster R-CNN | 0.210      | 0.216       |
@@ -319,12 +317,6 @@ The training speed is measure with s/iter. The lower, the better.
 | Retinanet    | 0.200      | 0.205       |
 
 ### Inference Speed
-
-The inference speed is measured with fps (img/s) on a single GPU, the higher, the better.
-To be consistent with Detectron2, we report the pure inference speed (without the time of data loading).
-For Mask R-CNN, we exclude the time of RLE encoding in post-processing.
-We also include the officially reported speed in the parentheses, which is slightly higher
-than the results tested on our server due to differences of hardwares.
 
 | Type         | Detectron2  | mmdetection |
 | ------------ | ----------- | ----------- |
